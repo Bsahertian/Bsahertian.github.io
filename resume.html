@@ -11,18 +11,15 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            background-image: url('path_to_your_background_image.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your image */
-            background-size: cover;
-            background-repeat: no-repeat;
             color: #333;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
-            border-radius: 10px; /* Rounded corners for the container */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
         /* Header Styles */
         header {
@@ -38,24 +35,8 @@
             font-size: 18px;
             line-height: 1.5;
         }
-        /* Add more styles as needed */
-        .btn-back {
-            float: right; /* Align to the right */
-            padding: 10px 20px;
-            background-color: #5297e1; /* Blue color */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-back:hover {
-            background-color: #3377d5; /* Darker blue color on hover */
-        }
-        .resume-link {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        .resume-link a {
+        /* Download Button Styles */
+        .btn-download {
             display: inline-block;
             padding: 10px 20px;
             background-color: #5297e1; /* Blue color */
@@ -63,15 +44,10 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            margin-right: 10px;
         }
-        .resume-link a:hover {
+        .btn-download:hover {
             background-color: #3377d5; /* Darker blue color on hover */
-        }
-        .resume-img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
@@ -79,15 +55,11 @@
     <div class="container">
         <header>
             <h1>Resume</h1>
-            <a href="index.html" class="btn-back">Back to Main Page</a>
+            <a href="https://www.dropbox.com/scl/fi/kdph24r7lyjz043aab8op/Bryan-Sahertian-Resume.pdf?rlkey=ik4sneo16361pnpa3dby9fbhz&dl=0" class="btn-download" download>Download Resume</a>
         </header>
         
-        <div class="resume-link">
-            <a href="path_to_your_resume.pdf" download class="btn-download">Download Resume</a> <!-- Replace 'path_to_your_resume.pdf' with the actual path to your resume PDF file -->
-        </div>
-        
-        <img src="path_to_your_resume_image.jpg" alt="Resume" class="resume-img"> <!-- Replace 'path_to_your_resume_image.jpg' with the actual path to your resume image -->
-        
+        <img src="https://www.dropbox.com/scl/fi/kdph24r7lyjz043aab8op/Bryan-Sahertian-Resume.pdf?raw=1" alt="Resume Image" style="max-width: 100%; height: auto; margin-top: 20px;">
+
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
         </footer>
