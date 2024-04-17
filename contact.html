@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Bryan Sahertian</title>
+    <title>Contacts - Bryan Sahertian</title>
     <style>
         /* Global Styles */
         body {
@@ -17,32 +17,22 @@
         .contact-section {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        .contact-title {
             text-align: center;
-            margin-bottom: 20px;
         }
         .contact-description {
-            text-align: center;
             margin-bottom: 20px;
         }
-        .contact-info {
+        .contact-icons {
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .contact-info p {
-            margin: 0;
         }
         .contact-icons img {
-            width: 30px;
-            height: auto;
+            width: 50px; /* Adjust as needed */
             margin-right: 10px;
+        }
+        .contact-info {
+            text-align: right;
         }
         /* Return to Main Page Button Styles */
         .btn-back {
@@ -53,6 +43,8 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            float: right; /* Align to the right */
+            margin-bottom: 20px;
         }
         .btn-back:hover {
             background-color: #3377d5; /* Darker blue color on hover */
@@ -61,27 +53,21 @@
 </head>
 <body>
     <div class="contact-section">
-        <h1 class="contact-title">Contacts</h1>
-        <p class="contact-description">Below are ways to contact me:</p>
-        <div class="contact-info">
-            <div class="contact-icons">
-                <img src="linkedin-icon.png" alt="LinkedIn Icon">
-            </div>
-            <p>Your LinkedIn Profile Link</p>
+        <a href="index.html" class="btn-back">Back to Main Page</a>
+        <h1>Contacts</h1>
+        <p class="contact-description">The means listed below are ways to contact me:</p>
+        <div class="contact-icons">
+            <img src="path_to_linkedin_icon" alt="LinkedIn Icon">
+            <div class="contact-info">Your LinkedIn Profile</div>
         </div>
-        <div class="contact-info">
-            <div class="contact-icons">
-                <img src="email-icon.png" alt="Email Icon">
-            </div>
-            <p>Your Email Address</p>
+        <div class="contact-icons">
+            <img src="path_to_email_icon" alt="Email Icon">
+            <div class="contact-info">Your Email Address</div>
         </div>
-        <div class="contact-info">
-            <div class="contact-icons">
-                <img src="phone-icon.png" alt="Phone Icon">
-            </div>
-            <p>Your Phone Number</p>
+        <div class="contact-icons">
+            <img src="path_to_phone_icon" alt="Phone Icon">
+            <div class="contact-info">Your Phone Number</div>
         </div>
-        <a href="index.html" class="btn-back">Return to Main Page</a>
     </div>
 </body>
 </html>
