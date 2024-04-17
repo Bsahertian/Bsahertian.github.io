@@ -1,0 +1,61 @@
+
+int val = 0; 
+int soilPin = A0; (ANALOG PIN TO READ FROM`)
+int soilPower = 6; (DIGITAL PWM PINS)
+int light = 0;
+
+
+void setup() 
+{
+  Serial.begin(9600);  
+
+  pinMode(soilPower, OUTPUT);
+  digitalWrite(soilPower, LOW);
+
+  pinMode(10, OUTPUT);
+  Serial.println("SOIL MOISTURE TABLE:");
+Serial.println("|--------------------------------------------------------|");
+Serial.println("| Moisture Range  |       Description                    |");
+Serial.println("|--------------------------------------------------------|");
+Serial.println("|     0           | dry asf                              |");
+Serial.println("|    0-100        | Blah                                 |");
+Serial.println("|  100-200        | Not so dry asf, but just barely      |");
+Serial.println("|  200-300        | Meh                                  |");
+Serial.println("|  300-400        | Okay...                              |");
+Serial.println("|  400-500        | It's wet?                            |");
+Serial.println("|  500-600        | I have no idea, just a filler        |");
+Serial.println("|  600-700        | New Record!                          |");
+Serial.println("|  800-880        | Big numbers now!                     |");
+Serial.println("|--------------------------------------------------------|");
+
+}
+
+void loop() 
+{
+
+Serial.print("Soil Moisture = ");    
+//get soil moisture value from the function below and print it
+Serial.println(readSoil());
+light = readSoil();
+
+if (light < 400) {
+  digitalWrite(10, HIGH);
+  Serial.println(light);
+}
+else {
+  digitalWrite(10, LOW);
+}
+//This 1 second timefrme is used so you can test the sensor and see it change in real-time.
+//For in-plant applications, you will want to take readings much less frequently.
+delay(1000);//take a reading every second
+}
+//This is a function used to get the soil moisture content
+int readSoil()
+{
+
+    digitalWrite(soilPower, HIGH);//turn D7 "On"
+    delay(10);//wait 10 milliseconds 
+    val = analogRead(soilPin);//Read the SIG value form sensor 
+    digitalWrite(soilPower, LOW);//turn D7 "Off"
+    return val;//send current moisture value
+}
