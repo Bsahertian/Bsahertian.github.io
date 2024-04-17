@@ -31,32 +31,22 @@
             color: #3377d5; /* Blue color */
             margin-bottom: 10px;
         }
-        /* Return to Main Page Button Styles */
-        .btn-back {
-            float: right; /* Align to the right */
-            padding: 10px 20px;
-            background-color: #5297e1; /* Blue color */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        /* Clickable Project Styles */
+        .project-container {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        .btn-back:hover {
-            background-color: #3377d5; /* Darker blue color on hover */
-        }
-        /* Project Box Styles */
         .project-box {
-            display: block;
-            width: 100%;
+            display: inline-block;
             padding: 20px;
-            background-color: #e6e6e6; /* Light gray background */
+            background-color: #fff; /* White background */
+            border: 1px solid #ccc;
             border-radius: 5px;
-            margin-bottom: 20px;
             transition: background-color 0.3s ease;
+            cursor: pointer;
         }
         .project-box:hover {
-            background-color: #f0f0f0; /* Lighter gray color on hover */
-            cursor: pointer;
+            background-color: #f0f0f0; /* Light gray background on hover */
         }
     </style>
 </head>
@@ -67,17 +57,19 @@
             <a href="index.html" class="btn-back">Return to Main Page</a>
         </header>
 
-        <!-- Project Box - Clickable -->
-        <div class="project-box" onclick="window.location.href='project_details.html'">
-            <h2>Soil Moisture Sensor Detector</h2>
-            <p>Short overview of the project and its results. Include images/photos/visuals/graphics.</p>
+        <!-- Clickable Project -->
+        <div class="project-container">
+            <div class="project-box">
+                <h2>Soil Moisture Sensor Detector</h2>
+                <!-- Add your project image here -->
+                <img src="path_to_your_project_image.jpg" alt="Project Image" style="max-width: 100%; height: auto;">
+            </div>
         </div>
 
-        <!-- Placeholder for other projects if needed -->
-        
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
         </footer>
     </div>
 </body>
 </html>
+
