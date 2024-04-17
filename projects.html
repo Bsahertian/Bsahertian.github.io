@@ -31,22 +31,34 @@
             color: #3377d5; /* Blue color */
             margin-bottom: 10px;
         }
-        /* Clickable Project Styles */
-        .project-container {
-            text-align: center;
-            margin-bottom: 30px;
+        /* Return to Main Page Button Styles */
+        .btn-back {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5297e1; /* Blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
         }
+        .btn-back:hover {
+            background-color: #3377d5; /* Darker blue color on hover */
+        }
+        /* Clickable Project Box Styles */
         .project-box {
             display: inline-block;
             padding: 20px;
-            background-color: #fff; /* White background */
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
         }
         .project-box:hover {
-            background-color: #f0f0f0; /* Light gray background on hover */
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -56,15 +68,14 @@
             <h1>Projects</h1>
             <a href="index.html" class="btn-back">Return to Main Page</a>
         </header>
-
-        <!-- Clickable Project -->
-        <div class="project-container">
-            <div class="project-box">
-                <h2>Soil Moisture Sensor Detector</h2>
-                <!-- Add your project image here -->
-                <img src="path_to_your_project_image.jpg" alt="Project Image" style="max-width: 100%; height: auto;">
-            </div>
+        
+        <div class="project-box">
+            <h2>Soil Moisture Sensor Detector</h2>
+            <p>Placeholder text for the Soil Moisture Sensor Detector project. Replace this with your actual project details.</p>
+            <a href="soil_moisture_detector.html">Learn More</a>
         </div>
+
+        <!-- Placeholder for additional projects -->
 
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
@@ -72,4 +83,3 @@
     </div>
 </body>
 </html>
-
