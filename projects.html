@@ -5,30 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Bryan Sahertian</title>
     <style>
-        /* Add your CSS styles here */
-        /* Example styles for this page */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #dcdcdc; /* Slight gray background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        /* Add more styles as needed */
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #3377d5; /* Blue color */
+            margin-bottom: 10px;
+        }
+        /* Return to Main Page Button Styles */
+        .btn-back {
+            float: right; /* Align to the right */
+            padding: 10px 20px;
+            background-color: #5297e1; /* Blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #3377d5; /* Darker blue color on hover */
+        }
+        /* Project Box Styles */
+        .project-box {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background-color: #e6e6e6; /* Light gray background */
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .project-box:hover {
+            background-color: #f0f0f0; /* Lighter gray color on hover */
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Projects</h1>
-            <!-- Add your projects showcase content here -->
-            <p>Display your projects, assignments, works, and relevant details here.</p>
+            <a href="index.html" class="btn-back">Return to Main Page</a>
         </header>
-        <!-- Add more sections or content as needed -->
+
+        <!-- Project Box - Clickable -->
+        <div class="project-box" onclick="window.location.href='project_details.html'">
+            <h2>Soil Moisture Sensor Detector</h2>
+            <p>Short overview of the project and its results. Include images/photos/visuals/graphics.</p>
+        </div>
+
+        <!-- Placeholder for other projects if needed -->
+        
+        <footer>
+            <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
