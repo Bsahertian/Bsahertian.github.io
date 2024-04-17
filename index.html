@@ -14,6 +14,29 @@
             color: #333;
         }
 
+        /* Background Texture Styles */
+        .background-left {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100vh;
+            background-image: url('path_to_left_texture_image.jpg'); /* Background image for the left side */
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .background-right {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            background-image: url('path_to_right_texture_image.jpg'); /* Background image for the right side */
+            background-size: cover;
+            z-index: -1;
+        }
+
         /* Container Styles */
         .container {
             max-width: 960px;
@@ -22,6 +45,8 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            position: relative;
+            z-index: 1;
         }
 
         /* Header Styles */
@@ -32,7 +57,7 @@
 
         h1 {
             font-size: 36px;
-            color: #3377d5; /* Blue color */    /*This is the title... "Welcome to my ePortfolio!" */
+            color: #3377d5; /* Blue color */
             margin-bottom: 10px;
         }
 
@@ -64,7 +89,7 @@
         }
 
         nav ul li a:hover {
-            background-color: #5297e1; /* Blue color on hover */ /* the color when hovering over a website*/
+            background-color: #5297e1; /* Blue color on hover */
             color: #fff;
         }
 
@@ -80,7 +105,7 @@
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
-            color: #a0b819; /* Blue color */ /*This is the color of "Summary" */
+            color: #a0b819; /* Blue color */
         }
 
         /* Footer Styles */
@@ -92,15 +117,14 @@
     </style>
 </head>
 <body>
+    <div class="background-left"></div>
+    <div class="background-right"></div>
     <div class="container">
         <header>
             <h1>Welcome to My ePortfolio!</h1>
             <p>I'm thrilled to offer you a glimpse into my world, showcasing not only who I am but also the skills and projects I'm currently immersed in.</p>
             <blockquote class="imgur-embed-pub" lang="en" data-id="Inh1JxC"><a href="https://imgur.com/Inh1JxC">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
         </header>
-        
-        
-        
         
         <nav>
             <ul style="list-style-type: none; padding: 0;">
@@ -117,8 +141,6 @@
                 <h2>Summary</h2>
                 <p>I am Bryan Sahertian, a student passionate about PCB boards and hardware. Currently enrolled as an undergraduate at Georgia Tech as a Computer Engineer Major, I strive to become a hardware engineer working on my own projects. Explore my ePortfolio to discover my projects learn a little about me!</p>
             </section>
-            
-            
         </main>
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
