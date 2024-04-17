@@ -17,15 +17,13 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f8f8f8; /* Slight gray background */
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
         }
         /* Header Styles */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
             margin-bottom: 20px;
         }
         h1 {
@@ -33,11 +31,7 @@
             color: #3377d5; /* Blue color */
             margin-bottom: 10px;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-        /* Download Button Styles */
+        /* Download Resume Button Styles */
         .btn-download {
             display: inline-block;
             padding: 10px 20px;
@@ -46,10 +40,29 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            margin-right: 10px;
         }
         .btn-download:hover {
             background-color: #3377d5; /* Darker blue color on hover */
+        }
+        /* Return to Main Page Button Styles */
+        .btn-back {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5297e1; /* Blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #3377d5; /* Darker blue color on hover */
+        }
+        /* Resume Image Styles */
+        .resume-img {
+            display: block;
+            margin: 20px auto; /* Centered image */
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -57,12 +70,12 @@
     <div class="container">
         <header>
             <h1>Resume</h1>
-            <a href="https://www.dropbox.com/scl/fi/kdph24r7lyjz043aab8op/Bryan-Sahertian-Resume.pdf?rlkey=ik4sneo16361pnpa3dby9fbhz&dl=0" class="btn-download" download>Download Resume</a>
+            <a href="https://www.dropbox.com/scl/fi/kdph24r7lyjz043aab8op/Bryan-Sahertian-Resume.pdf?rlkey=ik4sneo16361pnpa3dby9fbhz&dl=0" class="btn-download">Download Resume</a>
             <a href="index.html" class="btn-back">Return to Main Page</a>
         </header>
         
-        <img src="https://i.imgur.com/4q976bg.jpg" alt="Resume Image" style="max-width: 100%; height: auto; margin-top: 20px;">
-
+        <img src="https://i.imgur.com/4q976bg.jpg" alt="Resume" class="resume-img">
+        
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
         </footer>
