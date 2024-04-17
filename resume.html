@@ -11,14 +11,18 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            background-image: url('path_to_your_background_image.jpg'); /* Replace 'path_to_your_background_image.jpg' with the actual path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
         }
         /* Header Styles */
         header {
@@ -27,42 +31,48 @@
         }
         h1 {
             font-size: 36px;
-            color: #3377d5;
+            color: #3377d5; /* Blue color */
             margin-bottom: 10px;
         }
         p {
             font-size: 18px;
             line-height: 1.5;
         }
+        /* Add more styles as needed */
         .btn-back {
-            display: inline-block;
+            float: right; /* Align to the right */
             padding: 10px 20px;
-            background-color: #5297e1;
+            background-color: #5297e1; /* Blue color */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         .btn-back:hover {
-            background-color: #3377d5;
+            background-color: #3377d5; /* Darker blue color on hover */
         }
         .resume-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .resume-link a {
             display: inline-block;
-            margin-top: 10px;
             padding: 10px 20px;
-            background-color: #4caf50;
+            background-color: #5297e1; /* Blue color */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        .resume-link:hover {
-            background-color: #45a049;
+        .resume-link a:hover {
+            background-color: #3377d5; /* Darker blue color on hover */
         }
         .resume-img {
+            display: block;
+            margin: 0 auto;
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -70,14 +80,14 @@
     <div class="container">
         <header>
             <h1>Resume</h1>
-            <a href="index.html" class="btn-back">Return to Main Page</a>
+            <a href="index.html" class="btn-back">Back to Main Page</a>
         </header>
         
-        <a href="path_to_your_resume.pdf" class="resume-link" download>Download Resume</a>
+        <div class="resume-link">
+            <a href="path_to_your_resume.pdf" download>Download Resume</a> <!-- Replace 'path_to_your_resume.pdf' with the actual path to your resume PDF file -->
+        </div>
         
-        <img src="path_to_your_resume_image.jpg" alt="Resume" class="resume-img">
-        
-        <!-- Additional sections or content can be added as needed -->
+        <img src="path_to_your_resume_image.jpg" alt="Resume" class="resume-img"> <!-- Replace 'path_to_your_resume_image.jpg' with the actual path to your resume image -->
         
         <footer>
             <p>&copy; 2024 Bryan Sahertian. All rights reserved.</p>
