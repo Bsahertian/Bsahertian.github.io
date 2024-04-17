@@ -28,6 +28,7 @@
         header {
             text-align: center;
             margin-bottom: 20px;
+            position: relative; /* Added position relative */
         }
         h1 {
             font-size: 36px;
@@ -47,6 +48,9 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            position: absolute; /* Added position absolute */
+            top: 20px; /* Adjust top position as needed */
+            right: 20px; /* Adjust right position as needed */
         }
         .btn-back:hover {
             background-color: #3377d5; /* Darker blue color on hover */
@@ -62,9 +66,9 @@
     <div class="container">
         <header>
             <h1>About Me</h1>
-            <img src="https://i.imgur.com/Inh1JxC.jpg" alt="Your Image" style="max-width: 50%; height: auto;">
+            <img src="https://i.imgur.com/Inh1JxC.jpg" alt="Your Image" class="profile-img"> <!-- Updated class name -->
             <p>Welcome to my ePortfolio! I'm Bryan Sahertian, a passionate student exploring the world of hardware engineering. This website is a reflection of my journey, skills, and aspirations.</p>
-            
+            <a href="index.html" class="btn-back">Return to Main Page</a> <!-- Moved button here -->
         </header>
         
         <nav>
