@@ -28,7 +28,6 @@
         header {
             text-align: center;
             margin-bottom: 20px;
-            position: relative; /* Added position relative */
         }
         h1 {
             font-size: 36px;
@@ -39,26 +38,23 @@
             font-size: 18px;
             line-height: 1.5;
         }
-        /* Add more styles as needed */
-        .btn-back {
+        /* Button Styles */
+        .section-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .section-buttons a {
             display: inline-block;
             padding: 10px 20px;
+            margin-right: 10px;
             background-color: #5297e1; /* Blue color */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            position: absolute; /* Added position absolute */
-            top: 20px; /* Adjust top position as needed */
-            right: 20px; /* Adjust right position as needed */
         }
-        .btn-back:hover {
+        .section-buttons a:hover {
             background-color: #3377d5; /* Darker blue color on hover */
-        }
-        .profile-img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -68,7 +64,11 @@
             <h1>About Me</h1>
             <img src="https://i.imgur.com/Inh1JxC.jpg" alt="Your Image" class="profile-img"> <!-- Updated class name -->
             <p>Welcome to my ePortfolio! I'm Bryan Sahertian, a passionate student exploring the world of hardware engineering. This website is a reflection of my journey, skills, and aspirations.</p>
-            <a href="index.html" class="btn-back">Return to Main Page</a> <!-- Moved button here -->
+            <div class="section-buttons">
+                <a href="#biography">Biography</a>
+                <a href="#education">Education</a>
+                <a href="#interests">Interests and Hobbies</a>
+            </div>
         </header>
         
         <nav>
